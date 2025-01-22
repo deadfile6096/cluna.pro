@@ -1,0 +1,862 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta name="freelancehunt" content="1a9942a0467df1b">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="$NEA">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:title" content="$NEA">
+	<meta property="og:description" content="$NEA">
+	<meta property="og:url" content="index.html">
+	<meta property="og:image" content="images/og-image.jpg">
+	<meta property="og:image:width" content="1920">
+	<meta property="og:image:height" content="1080">
+	<meta property="og:site_name" content="$NEA">
+	<title>NEA | Home</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		/* preloader *******************/
+		/******************************/
+		.preloader {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			background: #1f1f1f;
+			transition: .4s;
+			transition-delay: .3s;
+			z-index: 9999;
+		}
+
+		.preloader.active {
+			transform: translateY(-100%);
+		}
+
+		.preloader canvas {
+			transition: .4s;
+		}
+
+		.preloader.active canvas {
+			transform: translateY(-100%);
+		}
+	</style>
+</head>
+
+<body id="home_page" class="_bg-color_general">
+
+	<!-- div .wrapp -->
+	<div class="wrapp">
+
+		<!-- div .preloader -->
+		<div id="preloader" class="preloader"></div>
+		<!-- /div .preloader END -->
+
+		<!-- button .up -->
+		<button class="up _link _cursor">
+			<span>up</span>
+			<img src="images/arrow.png" alt="up">
+		</button>
+		<!-- /button .up END -->
+
+		<!-- nav .nav -->
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="nav__menu _cursor">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav__menu-close _cursor">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+		<!-- /nav .nav END -->
+
+		<!-- div .nav__popup -->
+		<div class="nav__popup">
+			<span class="bg_anim-gsap nav__popup-anim-bg"></span>
+			<!-- div .nav__popup-wrapp -->
+			<div class="nav__popup-wrapp">
+				<!-- div .nav__popup-menu -->
+				<ul id="menu" class="nav__popup-menu menu">
+
+					<ul id="menu" class="nav__popup-menu menu">
+
+						<li class="nav__popup-item">
+							<a href="/index.html" class="nav__popup-link prevent_default menu__item" target="_blank">
+								<span class="nav__popup-name menu__item-textinner">home</span>
+								<span class="nav__popup-num">/01</span>
+							</a>
+						</li>
+					
+						<li class="nav__popup-item">
+							<a href="work.html" class="nav__popup-link menu__item" target="_blank">
+								<span class="nav__popup-name">Docs</span>
+								<span class="nav__popup-num">/02</span>
+							</a>
+						</li>
+					
+						<li class="nav__popup-item">
+							<a href="/interact/index.html" class="nav__popup-link  menu__item" target="_blank">
+								<span class="nav__popup-name">Enter The Game</span>
+								<span class="nav__popup-num">/03</span>
+							</a>
+						</li>
+					
+						<li class="nav__popup-item">
+							<a href="/preview.html" class="nav__popup-link  menu__item" target="_blank">
+								<span class="nav__popup-name">Preview</span>
+								<span class="nav__popup-num">/04</span>
+							</a>
+						</li>
+					
+					</ul>
+					
+				</ul>
+				<!-- /div .nav__popup-menu END -->
+			</div>
+			<!-- /div .nav__popup-wrapp END -->
+		</div>
+		<!-- /div .nav__popup END -->
+
+		<!-- div .qr__popup -->
+		<div class="qr__popup">
+
+			<div class="close__popup qr__close _cursor">
+				<span class="_gradient"></span>
+				<span class="_gradient"></span>
+			</div>
+
+			<span class="bg_anim-gsap qr__popup-anim-bg"></span>
+
+			<!-- div .qr__popup-wrapp -->
+			<div class="qr__popup-wrapp">
+
+				<h2 class="qr_gasp-elem">Scan <span>QR-code</span> to view <br> on smartphone</h2>
+
+				<div class="qr__img qr_gasp-elem">
+					<img src="images/qr-code.png" alt="qr-code">
+				</div>
+
+			</div>
+			<!-- /div .qr__popup-wrapp END -->
+		</div>
+		<!-- /div .qr__popup END -->
+
+		<!-- div .popup-work -->
+		<div class="popup-work">
+
+			<div class="close__popup popup-work__close _cursor">
+				<span class="_gradient"></span>
+				<span class="_gradient"></span>
+			</div>
+
+			<div class="popup-work__loading">
+				<p>loading...</p>
+			</div>
+
+			<!-- div .popup-work__wrapp -->
+			<div class="popup-work__wrapp">
+
+				<!-- div .popup-work__item .popup-work__img -->
+				<div class="popup-work__item popup-work__img">
+					<img src="#" alt="">
+				</div>
+				<!-- /div .popup-work__item .popup-work__img END -->
+
+				<!-- div .popup-work__item .popup-work__item_color -->
+				<div class="popup-work__item popup-work__item_color">
+
+					<div class="popup-work__bl">
+
+						<div class="popup-work__title">
+							<h2></h2>
+						</div>
+						<div class="popup-work__desc">
+
+						</div>
+					</div>
+
+				</div>
+				<!-- /div .popup-work__item .popup-work__item_color END -->
+			</div>
+			<!-- /div .popup-work__wrapp END -->
+		</div>
+		<!-- /div .popup-work END -->
+
+		<!-- div .serv__popup -->
+		<div class="serv__popup">
+
+			<div class="close__popup serv__close _cursor">
+				<span class="_gradient"></span>
+				<span class="_gradient"></span>
+			</div>
+
+			<span class="bg_anim-gsap serv__popup-anim-bg"></span>
+
+			<!-- div .serv__wrapp -->
+			<div class="serv__wrapp-popup">
+				<!-- div .wrapp-content -->
+				<div class="wrapp-content">
+
+					<div class="content">
+
+						<div class="serv__popup-wrapp">
+							<h2 class="serv_title-anim">
+								<span class="serv__title">Create Project</span>
+								<span class="serv__name">
+									<span class="serv__text"></span>
+									<span class="serv_line _gradient"></span>
+								</span>
+							</h2>
+
+							<!-- div .form__wrapp -->
+							<div class="form__wrapp gsap_form-anim">
+								<!-- div .form__enter -->
+								<form id="form__serv" action="#" class="form__enter">
+
+									<label class="form__label _cursor">
+										<span class="input_line"></span>
+										<input id="name" type="text" name="name" class="form__input form_style" placeholder="Name*" required="">
+										<span class="input-placeholder">Name*</span>
+									</label>
+
+									<label class="form__label _cursor">
+										<span class="input_line"></span>
+										<input id="email" type="email" name="mail" class="form__input form_style" placeholder="E-mail*" required="">
+										<span class="input-placeholder">E-mail*</span>
+									</label>
+
+									<label class="form__label _cursor">
+										<span class="input_line"></span>
+										<textarea name="message" id="message" class="form__input form__message form_style" placeholder="Message"></textarea>
+										<span class="input-placeholder">Message</span>
+									</label>
+									<input class="serv__select" type="hidden" name="serv" value="">
+
+									<button class="form__submit form_style _cursor">send</button>
+
+								</form>
+								<!-- /div .form__enter END -->
+							</div>
+							<!-- /div .form__wrapp END -->
+
+						</div>
+
+					</div>
+				</div>
+				<!-- /div .wrapp-content END -->
+			</div>
+			<!-- div .serv__wrapp END -->
+
+		</div>
+		<!-- /div .serv__popuup END -->
+
+		<!-- div .form__popup -->
+		<div class="form__popup">
+
+			<div class="close__popup form__close _cursor">
+				<span class="_gradient"></span>
+				<span class="_gradient"></span>
+			</div>
+
+			<!-- div .wrapp-content -->
+			<div class="wrapp-content">
+
+				<div class="content">
+					<p class="form__success"><span>Message</span> sent successfully</p>
+				</div>
+			</div>
+			<!-- /div .wrapp-content END -->
+		</div>
+		<!-- /div .form__popup END -->
+
+		<!-- header .header -->
+		<header id="home" class="header">
+			<!-- div .wrapp-content -->
+			<div class="wrapp-content">
+				<!-- .div .content -->
+				<div class="content">
+					<!-- .div .header__wrapp -->
+					<div class="header__wrapp">
+
+						<div class="fon">
+							<div class="fon__wrapp">
+								<img src="images/fon.png" alt="fon">
+							</div>
+						</div>
+						<h1 class="header__title">
+							<span class="header__sp letter_one naumov">Network</span>
+							<!-- <span class="move_img-cursor" data-link-img="me.jpg">
+								<span class="move-img"></span>
+								<span class="header__sp letter_two _move_ind"
+									style="pointer-events: none;">Dmitri</span>
+							</span> -->
+							<span class="header__sp letter_two">Evolved</span>
+							<span class="header__sp letter_three">Agents</span>
+						</h1>
+					</div>
+					<!-- /.div .header__wrapp END -->
+				</div>
+				<!-- /.div .content END -->
+			</div>
+			<!-- /div .wrapp-content END-->
+
+			<!-- .div .header__social -->
+			<ul class="header__social">
+
+				<li class="header__social-item move_img-cursor" data-link-img="telegram.jpg">
+					<span class="move-img"></span>
+					<a href="https://github.com/NEAGENTS/NEA" target="_blank" class="header__social-link _link _move_ind">GitHub</a>
+				</li>
+
+				<li class="header__social-item move_img-cursor" data-link-img="instagram.jpg">
+					<span class="move-img"></span>
+					<a href="https://www.x.com/neagents" target="_blank" class="header__social-link _link _move_ind">Twitter</a>
+				</li>
+
+				<li class="header__social-item move_img-cursor" data-link-img="github.jpg">
+					<span class="move-img"></span>
+					<a href="/interact/index.html" target="_blank" class="header__social-link _link _move_ind">Game</a>
+				</li>
+
+			</ul>
+			<!-- /.div .header__social END -->
+
+			<!-- .div .header__scroll -->
+			<div class="header__scroll _cursor">
+				<img src="images/scroll.png" alt="scroll">
+			</div>
+			<!-- /.div .header__scroll END -->
+
+			<!-- /.span .header__qr END -->
+		</header>
+		<!-- /header .header END -->
+
+		<!-- section .work -->
+		<section id="work" class="work _padd_top-bott80">
+			<!-- div .wrapp-content -->
+			<div class="wrapp-content">
+				<!-- div .content -->
+				<div class="content">
+					<!-- div .title -->
+					<div class="title">
+						<span class="title__num" data-aos="fade-left" data-aos-delay="200">/02</span>
+						<h2 class="title__h2"><span class="title__h2-span" data-aos="anim_title" data-splitting="">Agents</span></h2>
+					</div>
+					<!-- /div .title END-->
+
+					<!-- div .work__wrapp -->
+					<div class="work__wrapp">
+
+						<div class="work__link">
+							<div class="work__anim" data-aos="anim_work" data-aos-offset="50" data-aos-duration="800">
+								<div class="work__link-wrapp">
+									<a href="#" class="work__link-elem displacement" data-title="Npt Group" data-img="npt-group/npt-group-f.jpg">
+									</a>
+									<div class="popup-work__desc">
+										<p>Author: <span class="work_name">Naumov Dmitri</span></p>
+										<p>What: <span class="work_what">Layout, Animate On AOS.js, GreenSock.js, Retina Displays Support, Lazy Load, Validation Form, Custom Cursor, All Animation Available On Site, Anime.js For Animation Home Image</span></p>
+										<p>When: <span class="work_year">2021</span></p>
+										<p>Site: <span class="work_site"><a href="project/npt-group/index.html" target="_blank">view-demo</a></span></p>
+									</div>
+									<h3 class="work__name">The Solana Optimizer</h3>
+									<div class="circular-text">
+										<svg xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" viewBox="162 165 165 165">
+											<title>click - view - click - view - click - view -</title>
+											<defs>
+												<path d="M243.2, 382.4c-74.8, 0-135.5-60.7-135.5-135.5s60.7-135.5,135.5-135.5s135.5, 60.7, 135.5, 135.5 S318, 382.4, 243.2, 382.4z" id="textcircle"></path>
+											</defs>
+											<text class="circular_svg" dy="70" textLength="1200">
+												<textPath xlink:href="#textcircle">click - view - click - view - click - view -</textPath>
+											</text>
+										</svg>
+									</div>
+								</div>
+								<span class="work__num">Agent 1</span>
+							</div>
+						</div>
+						
+						<!-- Repeat similar structure for other sections -->
+						
+
+						<div class="work__link">
+							<div class="work__anim" data-aos="anim_work" data-aos-offset="50" data-aos-duration="800">
+								<div class="work__link-wrapp">
+									<a href="#" class="work__link-elem1 displacement" data-title="TNF" data-img="tnf/tnf-f.jpg">
+										<img src="images/tnf-b.jpg" alt="workb">
+										<img src="images/tnf-c.jpg" alt="workc">
+									</a>
+									<div class="popup-work__desc">
+										<p>Author: <span class="work_name">Naumov Dmitri</span></p>
+										<p>What: <span class="work_what"> All
+												Animation Available On Site, Animate On AOS.js, GreenSock.js +
+												ScrollTrigger.js, Animation Of Numbers, Preloader + Animation Load Page,
+												Custom Slider, Animation Text, Creat Drag Block, Creat Motion of blocks
+												when hovering</span>
+										</p>
+										<p>When: <span class="work_year">2021</span></p>
+										<p>Site: <span class="work_site"><a href="project/tnf/index.html" target="_blank">view-demo</a></span>
+										</p>
+										<!-- <p>О проекте: <span class="work_text">Lorem ipsum dolor </span></p> -->
+									</div>
+									<h3 class="work__name">The Neural Analyst</h3>
+									<div class="circular-text">
+										<svg xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" viewBox="162 165 165 165">
+											<title>click - view - click - view - click - view -
+											</title>
+											<defs>
+												<path d="M243.2, 382.4c-74.8, 
+								 0-135.5-60.7-135.5-135.5s60.7-135.5,135.5-135.5s135.5, 60.7, 135.5,
+								 135.5 S318, 382.4, 243.2, 382.4z" id="textcircle"></path>
+											</defs>
+											<text class="circular_svg" dy="70" textLength="1200">
+
+											</text>
+										</svg>
+									</div>
+								</div>
+								<span class="work__num">agent 2</span>
+							</div>
+						</div>
+
+						<div class="work__link">
+							<div class="work__anim" data-aos="anim_work" data-aos-offset="50" data-aos-duration="800">
+								<div class="work__link-wrapp">
+									<a href="#" class="work__link-elem2 displacement" data-title="Vents StartUp" data-img="vents-startup/vents-startup-f.jpg">
+										<img src="images/vents-startup-b.jpg" alt="workb">
+										<img src="images/vents-startup-c.jpg" alt="workc">
+									</a>
+									<div class="popup-work__desc">
+										<p>Author: <span class="work_name">Naumov Dmitri</span></p>
+										<p>What: <span class="work_what">Layout, Animate On WOW.js/animate.css,
+												Validation Form</span>
+										</p>
+										<p>When: <span class="work_year">2021</span></p>
+										<p>Site: <span class="work_site"><a href="project/vents-startup/index.html" target="_blank">view-demo</a></span>
+										</p>
+										<!-- <p>О проекте: <span class="work_text">Lorem ipsum dolor </span></p> -->
+									</div>
+									<h3 class="work__name">The Aegis Sentinel</h3>
+									<div class="circular-text">
+										<svg xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" viewBox="162 165 165 165">
+											<title>click - view - click - view - click - view -
+											</title>
+											<defs>
+												<path d="M243.2, 382.4c-74.8, 
+								 0-135.5-60.7-135.5-135.5s60.7-135.5,135.5-135.5s135.5, 60.7, 135.5,
+								 135.5 S318, 382.4, 243.2, 382.4z" id="textcircle"></path>
+											</defs>
+											<text class="circular_svg" dy="70" textLength="1200">
+
+											</text>
+										</svg>
+									</div>
+								</div>
+								<span class="work__num">agent 3 </span>
+							</div>
+						</div>
+
+						<div class="work__link">
+							<div class="work__anim" data-aos="anim_work" data-aos-offset="50" data-aos-duration="800">
+								<div class="work__link-wrapp">
+									<a href="#" class="work__link-elem3 displacement" data-title="Sun Glasses" data-img="sun-glasses/glasses-f.jpg">
+										<img src="images/glasses-b.jpg" alt="workb">
+										<img src="images/glasses-c.jpg" alt="workc">
+									</a>
+									<div class="popup-work__desc">
+										<p>Author: <span class="work_name">Naumov Dmitri</span></p>
+										<p>What: <span class="work_what">Design, Layout, Animate On TweenMax.js</span>
+										</p>
+										<p>When: <span class="work_year">2021</span></p>
+										<p>Site: <span class="work_site"><a href="project/sun-glasses/index.html" target="_blank">view-demo</a></span>
+										</p>
+										<!-- <p>О проекте: <span class="work_text">Lorem ipsum dolor </span></p> -->
+									</div>
+									<h3 class="work__name">The Evolver</h3>
+									<div class="circular-text">
+										<svg xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" viewBox="162 165 165 165">
+											<defs>
+												<path d="M243.2, 382.4c-74.8, 
+								 0-135.5-60.7-135.5-135.5s60.7-135.5,135.5-135.5s135.5, 60.7, 135.5,
+								 135.5 S318, 382.4, 243.2, 382.4z" id="textcircle"></path>
+											</defs>
+											<text class="circular_svg" dy="70" textLength="1200">
+												<textPath xlink:href="#textcircle">
+												</textPath>
+											</text>
+										</svg>
+									</div>
+								</div>
+								<span class="work__num">agent 4 </span>
+							</div>
+						</div>
+
+					</div>
+					<!-- /div .work__wrapp END -->
+
+					<!-- div .work__view-all -->
+					<!-- <a href="work.html" class="work__view-all" data-aos="fade-left">
+						<span>View all work</span>
+						<span>\View all work\</span>
+						<span>View all work</span>
+					</a> -->
+					<!-- /div .work__view-all END -->
+				</div>
+				<!-- /div .content END -->
+			</div>
+			<!-- /div .wrapp-content END -->
+		</section>
+		<!-- /section .work END -->
+
+		<!-- section .stack -->
+		<section class="stack _padd_top-bott80">
+			<!-- div .wrapp-content -->
+			<div class="wrapp-content">
+				<!-- div .content -->
+				<div class="content">
+					<!-- div .about__title -->
+					<div class="about__title">
+						<h2 class="about__title-h2" data-aos="fade-left">
+							Roadmap
+							<span class="about__title-span" data-aos="fade-left" data-aos-delay="200">
+								<br>
+								<span></span>
+							</span>
+						</h2>
+					</div>
+					<!-- /div .about__title END-->
+
+					<!-- div .about__stack -->
+					<div class="about__stack">
+
+						<div class="about__stack-item" data-aos="fade-up">
+							<div class="about__stack-txt">
+								<br>
+								<br>
+								<br>
+								<span class="about__stack-num"></span>
+								<span class="about__stack-title">Genesis & Framework Development</span>
+								<p class="about__stack-descript" style="color: lightgrey;">The initial phase focuses on building NEA’s core infrastructure on Solana, leveraging its speed and efficiency. The $NEA token is launched to power ecosystem transactions, and prototypes of the Five Core Evolved Agents are developed. Early adopters and developers are onboarded to refine the platform vision.
+
+								</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="about__stack-txt">
+								<br>
+								<br>
+								<br>
+								<span class="about__stack-num"></span>
+								<span class="about__stack-title">AI Agent Deployment</span>
+								<p class="about__stack-descript" style="color: lightgrey;">Subsequent phases focus on evolving agent capabilities, implementing decentralized governance, and integrating NEA into real-world industries. The roadmap culminates in a global, interconnected network of autonomous agents driving innovation and delivering blockchain-powered solutions across multiple sectors</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up">
+							<div class="about__stack-txt">
+								<br>
+								<br>
+								<br>
+								<span class="about__stack-num"></span>
+								<span class="about__stack-title">Agent Marketplace</span>
+								<p class="about__stack-descript" style="color: lightgrey;">This phase sees the release of the NEA beta platform, where AI agents can be created, trained, and deployed on-chain. The decentralized marketplace launches in a beta version, allowing agent trading and licensing. Developers gain access to an SDK for building custom agents, while staking mechanisms are introduced for token rewards.
+
+								</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="about__stack-txt">
+								<br>
+								<br>
+								<br>
+								<span class="about__stack-num"></span>
+								<span class="about__stack-title">Advanced AI Evolution</span>
+								<p class="about__stack-descript" style="color: lightgrey;">NEA will implement an on-chain AI evolution protocol, enabling agents to learn and improve autonomously. Cross-agent collaboration will be introduced, enhancing ecosystem interoperability. Marketplace capabilities will expand with performance metrics and reputation systems, and NEA will integrate into Solana’s DeFi ecosystem.
+
+								</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up">
+							<div class="about__stack-txt">
+								<br>
+								<br>
+								<br>
+								<span class="about__stack-num"></span>
+								<span class="about__stack-title">Real-World Blockchain Integration</span>
+								<p class="about__stack-descript" style="color: lightgrey;">NEA agents are deployed into real-world applications across industries like finance, healthcare, and supply chain, powered by Solana’s blockchain. The marketplace introduces tokenized revenue models for agents, while partnerships with enterprises and governments enable large-scale pilot projects. NEA agents expand to other blockchains for cross-chain functionality.
+
+								</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="about__stack-txt">
+								<br>
+								<br>
+								<br>
+
+								<span class="about__stack-num"></span>
+								<span class="about__stack-title">Unified Blockchain-AI Intelligence</span>
+								<p class="about__stack-descript" style="color: lightgrey"> This phase focuses on creating a global network of interconnected agents operating autonomously. AI-powered smart contracts and fully autonomous DAOs are deployed to revolutionize governance and decision-making. NEA becomes a leader in blockchain-native AI, driving real-world impact with decentralized, intelligent systems.
+									.
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<!-- /div .about__stack END -->
+				</div>
+				<!-- /div .content END -->
+			</div>
+			<!-- /div .wrapp-content END -->
+		</section>
+		<!-- /section .stack END -->
+
+		<!-- section .steps -->
+		<section class="steps _padd_top-bott80">
+			<!-- div .wrapp-content -->
+			<div class="wrapp-content">
+				<!-- div .content -->
+				<div class="content">
+					<!-- div .about__title -->
+					<div class="about__title">
+						<h2 class="about__title-h2" data-aos="fade-left">
+							Agents
+							<span class="about__title-span" data-aos="fade-left" data-aos-delay="200">
+								<span>Objectives</span>
+							</span>
+						</h2>
+					</div>
+					<!-- /div .about__title END -->
+
+					<!-- div .steps__wrapp -->
+					<div class="steps__wrapp">
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head active">
+								<h3><span class="steps__num">Agent 1</span>The Solana Optimizer</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p>This agent enhances Solana-based applications, optimizing transaction throughput, reducing latency, and improving overall blockchain performance. It ensures scalability and reliability for Solana-powered dApps and decentralized finance (DeFi) projects.</p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="images/step1.png" alt="step1">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head">
+								<h3><span class="steps__num">Agent 2 </span>The Neural Analyst</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p>A data-crunching AI agent that processes large volumes of data and generates actionable insights in real-time. Used across industries like finance, healthcare, and e-commerce, it powers predictive analytics and decision-making processes.  </p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="images/step2.png" alt="step2">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head">
+								<h3><span class="steps__num">Agent 3</span>The Aegis Sentinel</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p>An AI-driven cybersecurity agent that monitors and mitigates threats. It uses real-time AI-powered analysis to identify vulnerabilities, protect data, and secure decentralized networks against attacks.  </p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="images/step3.png" alt="step3">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+						
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head">
+								<h3><span class="steps__num">Agent 4</span>The Evolver</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p> The central force behind the evolution of all agents. This agent ensures that all other agents learn, adapt, and improve based on feedback and evolving user needs. It drives continuous growth, enhancing the overall ecosystem with new capabilities and solutions.  </p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="images/step4.png" alt="step4">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+
+					</div>
+					<!-- /div .steps__wrapp END -->
+				</div>
+				<!-- /div .content END -->
+			</div>
+			<!-- /div .wrapp-content END -->
+		</section>
+		<!-- /section .steps END -->
+
+
+
+		<!-- footer .footer -->
+		<footer class="footer">
+			<!-- div .wrapp-content -->
+			<div class="wrapp-content">
+				<!-- div .content -->
+				<div class="content">
+					<!-- div .footer__wrapp -->
+					<div class="footer__wrapp">
+						<!-- div .footer__block -->
+						<div class="footer__block">
+							<div class="footer__block-wrapp">
+								<span class="logo"></span>
+								<ul class="footer__social">
+									<li class="footer__item move_img-cursor" data-link-img="telegram.jpg">
+										<span class="move-img"></span>
+										<a href="https://github.com/NEAGENTS/NEA" class="footer__link _link _move_ind" target="_blank">GitHub</a>
+									</li>
+									<li class="footer__item move_img-cursor" data-link-img="instagram.jpg">
+										<span class="move-img"></span>
+										<a href="https://www.x.com/neagents/" class="footer__link _link _move_ind" target="_blank">Twitter</a>
+									</li>
+									<li class="footer__item move_img-cursor" data-link-img="github.jpg">
+										<span class="move-img"></span>
+										<a href="/interact/index.html" class="footer__link _link _move_ind" target="_blank">Game</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /div .footer__block END -->
+
+						<!-- div .footer__copyright -->
+						<div class="footer__copyright">
+							<span>© NEA</span>
+						</div>
+						<!-- /div .footer__copyright END -->
+					</div>
+					<!-- /div .footer__wrapp -->
+				</div>
+				<!-- /div .content END-->
+			</div>
+			<!-- /div .wrapp-content END -->
+		</footer>
+		<!-- /footer .footer END -->
+	</div>
+	<!-- /div .wrapp END -->
+
+	<!-- cursor-hover -->
+	<svg class="cursor" width="100" height="100" viewBox="0 0 140 140">
+		<defs>
+			<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+				<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="10" result="warp"></feTurbulence>
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="warp">
+				</feDisplacementMap>
+			</filter>
+		</defs>
+		<circle class="cursor__inner" cx="70" cy="70" r="60"></circle>
+	</svg>
+	<!-- /cursor-hover END -->
+
+	<!-- script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/hover-effect.umd.js"></script>
+	<script src="js/cursor-hover.js"></script>
+	<script src="js/menu-hover.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/circleType.min.js"></script>
+	<script src="js/splitting.min.js"></script>
+	<script src="js/js.js"></script>
+	<script type="text/javascript">
+		//preloader
+		const SETTINGS = {
+			rebound: {
+				tension: 2,
+				friction: 7
+			},
+			spinner: {
+				id: 'spinner',
+				radius: 170,
+				sides: 3,
+				depth: 9,
+				colors: {
+					background: '#f0f0f0',
+					stroke: null,
+					base: '#222',
+					child: '#f0f0f0'
+				},
+				alwaysForward: false, // When false the spring will reverse normally.
+				restAt: null, // A number from 0.1 to 0.9 || null for full rotation
+				renderBase: true
+			}
+		};
+
+		// circle text
+		function circleType() {
+
+			$(window).scroll(function () {
+
+				let offset = $(window).scrollTop();
+				offset = offset * 0.4;
+				$('.circular-text').css({
+					"-moz-transform": "rotate(" + offset + "deg)",
+					"-webkit-transform": "rotate(" + offset + "deg)",
+					"-o-transform": "rotate(" + offset + "deg)",
+					"-ms-transform": "rotate(" + offset + "deg)",
+					"transform": "rotate(" + offset + "deg)",
+				});
+			});
+		}
+		circleType();
+
+		//hover-work
+		Array.from(document.querySelectorAll('.displacement')).forEach((e) => {
+			const imgs = Array.from(e.querySelectorAll('img'));
+			new hoverEffect({
+				parent: e,
+				intensity: 0.3,
+				image1: imgs[0].getAttribute('src'),
+				image2: imgs[1].getAttribute('src'),
+				displacementImage: 'img/displacement/displacement.jpg'
+			});
+		})
+	</script>
+	<script src="js/preloader.js"></script>
+	<!-- /script END -->
+
+
+
+
+</body><!-- Mirrored from folio-nd.approvecode.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Jan 2025 18:43:52 GMT --></html>
